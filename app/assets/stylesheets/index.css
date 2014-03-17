@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Avenir', 'Nunito', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color:#000000;
+}
+
+a:hover {
+  color: #c20029;
+  transition: color .25s ease-in-out;
+   -moz-transition: color .25s ease-in-out;
+   -webkit-transition: color .25s ease-in-out;
+}
+
+#title {
+  width: 800px;
+  height: 150px;
+
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  
+  margin: auto;
+  margin-top: -45px;
+}
+
+#index_h1, #index_h2 {
+  font-weight: normal;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#index_h1 {
+  font-size: 60pt;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+#index_h2 {
+  font-size: 15pt;
+  letter-spacing: 8px;
+  line-height: 1px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul {
+  padding: 20px 0;
+  margin: 0;
+}
+
+ul.dropdown {
+  opacity: 0;
+  font-size: 15px;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 143px;
+  left: 400px;
+  background-color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+ul li:hover ul.dropdown {
+  opacity: 1;
+}
+
+ul.dropdown li {
+  display: block;
+  padding: 10px;
+}
+
+.social_media {
+  position: fixed;
+  bottom: 16px;
+  left: 40px;
+  z-index:2;
+}
+
+.social_media img {
+  width: 16px;
+  margin-right: 10px;
+}
+
+.social_media img:hover {
+  opacity: .5;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}

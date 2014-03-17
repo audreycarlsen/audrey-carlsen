@@ -5,7 +5,7 @@
   <head>
     <title>Audrey Carlsen</title>
     <link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
-    <link href="/css/main.css" media="all" rel="stylesheet">
+    <link href="assets/main.css" media="all" rel="stylesheet">
   </head>
 
   <body>
@@ -19,16 +19,7 @@
           <li><a href='/digital'>Digital</a></li><br>
           <li><a href='/radio'>Radio</a></li><br>
           <li><a href='http://thiscarletonlife.blogspot.com' target='blank'>Podcast</a></li><br>
-          <li>
-            <a href='/blog'>Blog</a>
-            <ul class='dropdown'>
-              <li>
-                <% @sorted_posts.each do |post, date_array| %>
-                <li><a href="/blog/<%= post %>"><%= post %></a></li>
-                <% end %>
-              </li><br>
-            </ul>
-          </li><br>
+          <li><a href='/blog'>Blog</a></li><br>
           <li><a href='/about'>About</a></li>
         </ul>
       </div>
@@ -39,9 +30,9 @@
     </div>
 
     <div class='social_media'>
-      <a href='http://www.linkedin.com/pub/audrey-carlsen/63/294/96b' target='_blank'><img src='../images/linkedin.svg' title='LinkedIn'></a>
-      <a href='https://twitter.com/audcarls' target='_blank'><img src='../images/twitter.svg' title='Twitter'></a>
-      <a href='https://github.com/audreycarlsen' target='_blank'><img src='../images/github.svg' title='GitHub'></a>
+      <a href='http://www.linkedin.com/pub/audrey-carlsen/63/294/96b' target='_blank'><img src='assets/linkedin.svg' title='LinkedIn'></a>
+      <a href='https://twitter.com/audcarls' target='_blank'><img src='assets/twitter.svg' title='Twitter'></a>
+      <a href='https://github.com/audreycarlsen' target='_blank'><img src='assets/github.svg' title='GitHub'></a>
     </div>
   </body>
 
