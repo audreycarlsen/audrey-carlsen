@@ -11,9 +11,6 @@ class WelcomeController < ApplicationController
   def radio
   end
 
-  def blog
-  end
-
   def about
   end
 end

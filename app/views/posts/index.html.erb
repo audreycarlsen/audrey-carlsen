@@ -1,0 +1,9 @@
+<div class='reverse_links'>
+  <% @posts.each do |post| %>
+    <p>
+      <h2 class='h2_blog'><%= post.created_at.strftime('%A, %B %e, %Y') %></h2><br>
+      <h1 class='h1_blog'><%= post.title %></h1><br>
+      <%= post.content.html_safe %>
+    </p><br>
+  <% end %>
+</div>
