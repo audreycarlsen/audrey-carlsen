@@ -1,0 +1,18 @@
+<%= form_for(@post) do |f| %>
+  <p>
+    <div class="field">
+      <%= f.label :title %><br>
+      <%= f.text_field :title, :size => 60 %>
+    </div>
+  </p>
+  <p>
+    <div class="field">
+      <%= f.text_area :content, :rows=>20, :cols=>60 %>
+    </div>
+  </p>
+  <p>
+    <div class="actions">
+      <%= f.submit("Onward, to glory!") %>
+    </div>
+  </p>
+<% end %>
