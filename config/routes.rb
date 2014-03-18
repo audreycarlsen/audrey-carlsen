@@ -12,6 +12,6 @@ Audreycarlsen::Application.routes.draw do
   patch '/blog/:id',      to: 'posts#update'
   get   '/about',         to: 'welcome#about',   as: 'about'
 
-  get   '/admin',         to: 'admin#index'
-  # resources :posts
+  get   '/log_in',        to: 'session#new',     as: 'log_in'
+  get   '/log_out',       to: 'session#destroy', as: 'log_out'
 end
