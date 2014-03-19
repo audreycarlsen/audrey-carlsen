@@ -64,13 +64,15 @@ h3 {
 
 #sidebar {
   font-size: 17px;
-  padding-left: 30px;
+  padding-left: 70px;
+  margin-top: -15px;
   width: 100px;
   height: 100%;
   letter-spacing: 1px;
   position: fixed;  
   top: 105px;
   background-color: white;
+  line-height: 48px;
 }
 
 .box {
