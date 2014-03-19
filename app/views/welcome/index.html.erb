@@ -4,8 +4,9 @@
 
   <head>
     <title>Audrey Carlsen</title>
-    <link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
-    <link href="/assets/index.css" media="all" rel="stylesheet">
+    <%= stylesheet_link_tag "index", media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Nunito:300", type: "text/css", "data-turbolinks-track" => true %>
+
   </head>
 
   <body>
@@ -24,8 +25,8 @@
 
     <div class='social_media'>
       <%= link_to(image_tag("linkedin.svg"), 'http://www.linkedin.com/pub/audrey-carlsen/63/294/96b', :title => "LinkedIn")%>
-      <a href='https://twitter.com/audcarls' target='_blank'><img src='/assets/twitter.svg' title='Twitter'></a>
-      <a href='https://github.com/audreycarlsen' target='_blank'><img src='/assets/github.svg' title='GitHub'></a>
+      <%= link_to(image_tag("twitter.svg"),  'https://twitter.com/audcarls',                          :title => "Twitter")%>
+      <%= link_to(image_tag("github.svg"),   'https://github.com/audreycarlsen',                      :title => "GitHub")%>
     </div>
   </body>
 
