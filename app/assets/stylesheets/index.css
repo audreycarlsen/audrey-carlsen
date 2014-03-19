@@ -25,7 +25,7 @@ a:hover {
   right: 0;
   
   margin: auto;
-  margin-top: -45px;
+  margin-top: -30px;
 }
 
 #index_h1, #index_h2 {
@@ -46,6 +46,7 @@ a:hover {
   letter-spacing: 8px;
   line-height: 1px;
   text-align: center;
+  padding-top: 15px;
 }
 
 li {
