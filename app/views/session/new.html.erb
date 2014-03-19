@@ -1,7 +1,7 @@
-<h1>Speak, friend, and enter.</h1>
+<h1 class="h1_blog">Speak, friend, and enter.</h1>
 <%= form_tag blog_path, :method => 'get' do %>
   <p>
-    <%= text_field_tag :password %>
+    <%= password_field_tag :password %>
     <%= submit_tag "Onward, to glory!" %>
   </p>
 <% end %>

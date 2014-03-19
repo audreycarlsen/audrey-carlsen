@@ -3,10 +3,8 @@ class SessionController < ApplicationController
   end
 
   def create
-    user = User.find_by(email: params[:email])
-    
     if params[:password] == 'tacocat'
-      session[:admin] = true
+      session[:audrey] = true
       redirect_to blog_path
     else
       render :new
@@ -14,7 +12,7 @@ class SessionController < ApplicationController
   end
 
   def destroy
-    session[:admin] = false
+    session[:audrey] = false
     redirect_to blog_path
   end
 end
