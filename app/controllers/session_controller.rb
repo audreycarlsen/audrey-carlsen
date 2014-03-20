@@ -3,16 +3,17 @@ class SessionController < ApplicationController
   end
 
   def create
-    if params[:password] == 'tacocat'
-      session[:audrey] = true
+    user = User.find_by(username: params[:username])
+    if user && user.authenticate(params[:password])
+      session[:user_id] = user.id
       redirect_to blog_path
     else
-      render :new
+      render "new"
     end
   end
 
   def destroy
-    session[:audrey] = false
-    redirect_to blog_path
+    session[:user_id] = nil
+    redirect_to log_in_path, :notice => "Logged out."
   end
 end

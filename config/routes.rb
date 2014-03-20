@@ -14,5 +14,6 @@ Audreycarlsen::Application.routes.draw do
   get    '/about',         to: 'welcome#about',   as: 'about'
 
   get    '/log_in',        to: 'session#new',     as: 'log_in'
+  post   '/log_in',        to: 'session#create',  as: 'sessions'
   get    '/log_out',       to: 'session#destroy', as: 'log_out'
 end
