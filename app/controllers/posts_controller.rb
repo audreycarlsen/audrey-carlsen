@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+  before_action :authorize, except: [:index, :show]
+
   def index
     @posts = Post.paginate(:page => params[:page], :per_page => 1).order('created_at DESC')
   end
