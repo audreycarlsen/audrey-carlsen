@@ -8,7 +8,7 @@ class SessionController < ApplicationController
       session[:user_id] = user.id
       redirect_to blog_path
     else
-      render "new"
+      render "new", :notice => "That was wrong."
     end
   end
 
