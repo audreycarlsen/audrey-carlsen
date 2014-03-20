@@ -24,6 +24,9 @@
           <li><a href='http://thiscarletonlife.blogspot.com' target='blank'>Podcast</a></li><br>
           <li><a href='/blog'>Blog</a></li><br>
           <li><a href='/about'>About</a></li>
+          <% if session[:user_id] == 1 %>
+            <li>( <%= link_to "Log Out", log_out_path%> )</li>
+          <% end %>
         </ul>
       </div>
 
