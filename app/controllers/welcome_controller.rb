@@ -11,6 +11,9 @@ class WelcomeController < ApplicationController
   def radio
   end
 
+  def code
+  end
+
   def about
   end
 end

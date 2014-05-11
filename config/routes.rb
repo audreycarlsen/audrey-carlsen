@@ -4,6 +4,7 @@ Audreycarlsen::Application.routes.draw do
   get    '/',              to: 'welcome#index',   as: 'index', layout: false
   get    '/digital',       to: 'welcome#digital', as: 'digital'
   get    '/radio',         to: 'welcome#radio',   as: 'radio'
+  get    '/code',          to: 'welcome#code',    as: 'code'
   get    '/blog',          to: 'posts#index',     as: 'blog'
   get    '/blog/new',      to: 'posts#new',       as: 'posts'
   post   '/blog/new',      to: 'posts#create'
