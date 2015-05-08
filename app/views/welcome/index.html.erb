@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-
 <html>
-
   <head>
     <title>Audrey Carlsen</title>
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag "index", media: "all", "data-turbolinks-track" => true %>
-    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Quicksand", type: "text/css", "data-turbolinks-track" => true %>
-
+    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Oswald:300,400,700|Lato:300,300italic,400,400italic", type: "text/css", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", type: "text/css", "data-turbolinks-track" => true %>
   </head>
 
   <body>
-    <div id='title'>
-      <h1 id='index_h1'>Audrey Carlsen</h1>
-      <div id='index_h2'>
-        <ul>
-          <li><a href='/digital'>Digital</a>  ~  </li>
-          <li><a href='/radio'>Radio </a>  ~  </li>
-<!--           <li><a href='http://thiscarletonlife.blogspot.com' target='blank'>Podcast</a> ~ </li> -->
-          <li><a href='/code'>Code </a>  ~  </li>
-          <li><a href='/blog'>Blog</a></li>
-          <li>~ <a href='/about'>About</a></li>
-        </ul>
+    <div class="container">
+      <div class="name">Audrey Carlsen</div>
+      <div class='reverse_links'>
+        <div class="audrey-info">
+          <p>In 2012, Audrey left medical school and cannonballed into the world of journalism. Since then, she has reported for <a href='http://www.npr.org/templates/search/index.php?searchinput=audrey+carlsen'>NPR</a> and <a href='http://www.kucb.org'>Alaska Public Media</a>, and is now cutting her teeth on interactives at <a href='http://dev.seattletimes.com'><em>The Seattle Times</em></a>.
+        
+          <p>Colleagues have described Audrey as "a little bit crazy" and "not entirely hopeless."</p> 
+        
+          <p>She is currently based in Seattle and hopes to one day live in a very small house with a very large bathtub.</p>
+        </div>
+
+        <div class='social_media'>
+          <a href='http://www.linkedin.com/pub/audrey-carlsen/63/294/96b' title="LinkedIn"><%= image_tag("linkedin.svg") %></a>
+          <a href='https://twitter.com/audcarls' title="Twitter"><%= image_tag("twitter.svg") %></a>
+          <a href='https://github.com/audreycarlsen' title="GitHub"><%= image_tag("github.svg") %></a>
+        </div>
+
+        <div class="audrey-pic"><%= image_tag "audreypic.jpg", {width: 400} %></div>
       </div>
     </div>
-
-    <div class='social_media'>
-      <a href='http://www.linkedin.com/pub/audrey-carlsen/63/294/96b' target="_blank" title="LinkedIn"><%= image_tag("linkedin.svg") %></a>
-      <a href='https://twitter.com/audcarls' target="_blank" title="Twitter"><%= image_tag("twitter.svg") %></a>
-      <a href='https://github.com/audreycarlsen' target="_blank" title="GitHub"><%= image_tag("github.svg") %></a>
-    </div>
   </body>
-
 </html>
+
